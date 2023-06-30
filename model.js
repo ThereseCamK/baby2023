@@ -3,10 +3,12 @@ const model = {
     current: 'Home',
     view: '',
     buttons:[
-        'Home',
+        'Hjem',
         'Handleliste',
         'Babynavn',
         'Budskjett',
+        'Fødebag',
+        'Settings'
     ],
 
         shopingList:[

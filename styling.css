@@ -16,21 +16,34 @@ h2{
 
 .mainPage{
     display:grid;
-    grid-template-columns:30% 70%;
-    grid-template-rows: 20vh 80vh ;
-    grid-template-areas: 'menu header'
+    grid-template-columns:auto auto;
+    grid-template-rows: 1vh 20vh 79vh;
+    grid-template-areas: 'menu menu'
+                        'header header'
                          'content content';
 
 }
+@media only screen and (max-width: 400px) {
+  .mainPage{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 5vh 10vh 85vh;
+    grid-template-areas: 'menu menu'
+                        'header header'
+                         'content content';
+  }  
+}
+
+
 .menu{
     grid-area: menu;
-    text-align: left;
     font-size: xx-large;
    
 }
 .header{
     grid-area: header;
-   margin: 20%;
+    text-align: center;
+   margin: 5%;
 
 }
 .content{
